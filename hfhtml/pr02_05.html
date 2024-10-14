@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Форма, таблица, списки.</title>
+</head>
+<body>
+	<h1>My HTML basics.</h1>
+	<h2>Форма обратной связи.</h2>
+	<form action="#" method="post">
+		<label for="name">Имя: </label>
+		<input type="text" id="name" name="name" required><br><br>
+		<label for="email">Электронная почта: </label>
+		<input type="email" id="email" name="email" required><br><br>
+		<label for="message">Сообщение: </label><br>
+		<textarea id="message" name="message" rows="5" cols="50" required>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</textarea><br>
+		<input type="submit" value="send">
+	</form>
+	<h2>HTML таблица</h2>
+	<table border="1" width="1000" height=auto>
+		<tr>
+			<th>Tag</th>
+			<th>Atribute</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td rowspan="3">html</td>
+			<td>lang</td>
+			<td>Обязательный, для лучшей доступности, указывает язык используемый на странице, например: lang="ua".</td>
+		</tr>
+		<tr>
+			<td>xmlns</td>
+			<td>Определяет namespace-XML для документа. Обычно используется в XHTML. Значение по умолчанию "http://www.w3.org/1999/xhtml"</td>
+		</tr>
+		<tr>
+			<td>dir</td>
+			<td>Указывает направление текста на странице. Значения: ltr, rtl</td>
+		</tr>
+		<tr>
+			<td>manifest</td>
+			<td>Устаревший атрибут, раньше использовался для указания манифеста содержащего информацию для работы веб-приложения офлайн(часть технологии AppCache). В современных браузерах заменён service workers.</td>
+		</tr>
+		<tr>
+			<td rowspan="3">head</td>
+			<td>-</td>
+			<td>Используется для размещения мета-данных веб-страницы, таких как заголовок страницы, ссылки на стили, скрипты и другая информация, которая не отображается непосредственно на странице. Он распологается внутри корневого тега и передаёт информацию браузеру о том, как обрабатывать страницу(содержимое).</td>
+		</tr>
+	</table><br><br>
+	<h2>Списки: </h2><br><br>
+	<h2>Technology stack:</h2><br>
+	<ol>
+		<li>HTML</li><br>
+		<ul>
+			<li>Что такое HTML?</li>
+			<li>Структура HTML-документа.</li>
+			<li>Tags.</li>
+			<li>Atributes.</li>
+		</ul><br><br>
+		<li>CSS</li><br>
+		<ul>
+			<li>Что такое CSS?</li>
+			<li>Структура CSS-документа.</li>
+			<li>Способы подключения CSS к HTML.</li>
+			<li>CSS-селекторы.</li>
+			<li>Приоритетность селекторов.</li>
+			<li>Псевдо-классы и псевдо-элементы.</li>
+			<li>Встроенные стили браузера.</li>
+			<li>Flexbox.</li>
+			<li>Медиа-запросы.</li>
+			<li>Подключение внешних библиотек.</li>
+			<li>Препроцессоры (SCSS/SASS)</li>
+		</ul><br><br>
+		<li>Git</li><br>
+		<ul>
+			<li>Что такое Git? Зачем он нужен?</li>
+			<li>GitHub, GitLab, Bitbucket.</li>
+			<li>Создание репозитория(локального и удалённого).</li>
+			<li>git commit, git add.</li>
+			<li>git push, git pull.</li>
+			<li>Ветвление.</li>
+			<li>git merge.</li>
+		</ul><br><br>
+		<li>Browser and network</li><br>
+		<ul>
+			<li>Что редставляет из себя интернет?</li>
+			<li>Что происходит между вводом URL адреса в адресной строке и отображением сайта в браузере(GET-запрос, DNS).</li>
+			<li>Document Object Model.</li>
+			<li>Инструменты разработчика(Chrome Devtools).</li>
+		</ul><br><br>
+		<li>JS</li><br>
+		<ul>
+			<li>What is JS?</li>
+			<li>Типы данных.</li>
+			<li>Переменные.</li>
+			<li>var, let, const.</li>
+			<li>Loops(for, while).</li>
+			<li>Functions.</li>
+			<li>Methods(arrays, lines, objects).</li>
+			<li>Область видимости.</li>
+			<li>Подключение JS-скрипта к HTML.</li>
+			<li>PET project.</li>
+		</ul><br><br>
+		<li>React JS</li><br>
+		<ul>
+			<li>What is React?</li>
+			<li>Как он работает? В чём главное преимущество?</li>
+			<li>Virtual DOM.</li>
+			<li>Create react app.</li>
+			<li>React-хуки: useState, useEffect, useRef, useCallback.</li>
+			<li>React devtools.</li>
+			<li>React Context.</li>
+			<li>React Router.</li>
+		</ul><br><br>
+		<li>JS 2nd lvl</li><br>
+		<ul>
+			<li>Замыкания.</li>
+			<li>Promise(+async/defer).</li>
+			<li>Выбрасывание исключений и отлов ошибок(try-catch, throw).</li>
+			<li>Контекст(+call/bind/apply) и специфика контекста в стрелочных функциях.</li>
+			<li>async/defer.</li>
+			<li>Event Loop(микро- и макро-задачи).</li>
+			<li>Функции-генераторы.</li>
+			<li>Типы Map, Set, Symbol.</li>
+		</ul><br><br>
+		<li>Usefull tools: </li><br>
+		<ul>
+			<li>axios.</li>
+			<li>Redux.</li>
+			<li>Redux-Thunk/Redux-Saga.</li>
+			<li>Redux toolkit.</li>
+			<li>Styled-Components/Emotions.</li>
+			<li>MUI/Ant Design/Tailwind.</li>
+			<li>Линтеры (ESlint).</li>
+			<li>Jest/Cypress.</li>
+			<li>Next JS.</li>
+			<li>Firebase, Netlify, Heroky(деплой проектов).</li>
+			<li>Lighthouse, PageSpeed(оценка производительности)</li>
+		</ul><br><br>
+		<li>TypeScript</li><br>
+		<ul>
+			<li>Type/Interface</li>
+			<li>Tuples</li>
+			<li>Generics</li>
+			<li>Enums</li>
+			<li>Type casting</li>
+			<li>Type guards</li>
+			<li>Типизация React props</li>
+			<li>Разница между any и unknown</li>
+		</ul><br><br>
+		<li>Browser and network 2 lvl</li><br>
+		<ul>
+			<li>Методы запросов(get, put, post, patch, delete, options...).</li>
+			<li>Критические этапы рендеринга(critical rendering path).</li>
+			<li>Reflow, Repaint, composite.</li>
+			<li>HTTP vs HTTPS(SSL-протокол).</li>
+			<li>HTTP1, HTTP2, HTTP3.</li>
+			<li>Service Worker API.</li>
+		</ul><br><br>
+		<li>Theory</li><br>
+		<ul>
+			<li>Паттерны проектирования.</li>
+			<li>Принципы SOLID.</li>
+			<li>Принципы DRY & KISS.</li>
+		</ul><br><br>
+		<li>Back-end</li><br>
+		<ul>
+			<li>Что такое Back-end?</li>
+			<li>Node JS.</li>
+			<li>Express</li>
+			<li>SQL/NoSQL</li>
+			<li>Nest JS</li>
+		</ul><br><br>
+	</ol>
+</body>
+</html>
